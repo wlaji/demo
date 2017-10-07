@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<style>
+	*{margin:0px;padding:0px;}
+	#tab{font-size:14px;width:400px;height:250px;padding:5px;margin:20px;}
+	ul{height:30px;font-size:18px;font-family:"微软雅黑";line-height:30px;border-bottom:2px solid saddlebrown;}
+	ul li{display:inline-block;border:1px solid #C3C3C3;height:28px;line-height:28px;border-bottom:none;margin-right:10px;width:60px;text-align:center;cursor:pointer}
+	.on{border-top:2px solid saddlebrown;border-bottom:2px solid #fff;}
+	#tab div{border:1px solid #444444;padding:5px;border-top:none;}
+	.hide{display:none;}
+	.father{height:40px;padding:10px;background:#3B67CD;border:1px solid #0E0E0E}
+	.son{background:#585858;margin-top:51px;padding:30px;border:1px dashed #C0C0C0 }
+	.filter{-webkit-filter:contrast(0.5)}
+
+
+</style>
+</head>
+
+<body>
+<div id="tab">
+	<ul>
+      <li class="on">房产</li>
+      <li >家具</li></li>
+      <li >二手房</li>
+    </ul>
+    <div>
+    	<p>你叫什么</p>
+        <p>你是什么</p>
+        <p>你做什么</p>
+        <p>你叫什么</p>
+    </div>
+
+    <div class="hide">
+    	<p>我喜欢吃鱼</p>
+        <p>我喜欢吃鱼</p>
+        <p>我喜欢吃鱼</p>
+        <p>我喜欢吃鱼</p>
+    </div>
+    <div class="hide">
+    	<p>我不喜欢吃鱼</p>
+        <p>我不喜欢吃鱼</p>
+        <p>我不喜欢吃鱼</p>
+        <p>我不喜欢吃鱼</p>
+    </div>
+
+</div>
+<img src="../image/sishen.jpg" class="filter" width="400" height="300">
+<div class="father">
+	<div class="son">123456</div>
+</div>
+
+<script>
+window.onload=function(){
+		tabs();
+	}
+function tabs(){
+	var otab=document.getElementById("tab");
+	var oul=otab.getElementsByTagName("ul")[0];
+	var oli=oul.getElementsByTagName("li");
+	var odiv=tab.getElementsByTagName("div");
+	for(var i=0;i<oli.length;i++){
+		oli[i].index=i;
+		oli[i].onclick=function(){
+			for(var j=0;j<oli.length;j++){
+				oli[j].className="";
+				odiv[j].className="hide";	
+			}
+		this.className="on";
+		odiv[this.index].className="";
+		}	
+	};	
+}
+</script>
+</body>
+</html>

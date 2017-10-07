@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+	<title>task9</title>
+	<style type="text/css">
+	    html{
+		  margin:0
+		}
+		header{
+		  width:100%;
+		  height:50px;
+		  background-color:#228abf;
+		}
+		.left-col{
+		  width:20%;
+		  height:1200px;
+		  background-color:#2b2e3d;
+		  margin:0;
+		  padding:0;
+		  float:left;
+		  text-indent:4em;
+		  line-height:34px;
+		  font-size:12px;
+		  font-family:微软雅黑;
+		  color:#fff;
+		}
+		.left-col ul{list-style: none;}
+		.left-col active0{width:100%;background-color: #383d4e;}
+		.user{ display: inline-block; *display: inline; vertical-align: middle;  }
+		.user img{ width: 57px; height: 57px; margin-right: 17px;float:left; }
+		.user h4{ font-size: 16px; font-weight: normal; }
+		.clearfix{ overflow: hidden; zoom: 1; }
+		.left{ float: left; }
+		.right-col{
+		  width:80%;
+		  height:1200px;
+		  background-color:#eee;
+		  margin:0;
+		  padding:0;
+		  float:left;
+		}
+		.right-top{
+		  width:100%;
+		  height:36px;
+		  background-color:#fff;
+		  margin:0;
+		  float:right;
+		}
+		.right1{
+		  width:80%;
+		  height:90px;
+		  margin-left:80px;
+		  margin-top:20px;
+		  background-color:#fff;
+		  float:left;
+		  color:#cfcfcf;
+		  font-size:12px;
+		  text-indent:2em;
+		}
+		
+		.right2{
+		  width:85%;
+		  height:36px;
+		  margin-left:40px;
+		  margin-top:10px;
+		  margin-bottom:38px;
+		  padding:0px;
+		  float:left;
+		}
+		.right21{
+		  width:24px;
+		  height:50px;
+		  margin-left:40px;
+		  margin-top:10px;
+		  padding-left:10px;
+		  padding-top:20px;
+		  background-color:#fff;
+		  float:left;
+		}
+		.right22{
+		  width:90px;
+		  height:60px;
+		  padding-top:10px;
+		  margin-left:5px;
+		  margin-top:10px;
+		  background-color:#fff;
+		  text-indent:1.5em;
+		  float:left;
+		}
+		.right23{
+		  width:90px;
+		  height:60px;
+		  padding-top:10px;
+		  margin-left:5px;
+		  margin-top:10px;
+		  background-color:#fff;
+		  text-indent:1.5em;
+		  float:left;
+		}
+		.right24{
+		  width:110px;
+		  height:60px;
+		  padding-top:10px;
+		  margin-left:5px;
+		  margin-top:10px;
+		  background-color:#fff;
+		  text-indent:1.5em;
+		  float:left;
+		}
+		.right25{
+		  width:34px;
+		  height:50px;
+		  padding-top:20px;
+		  margin-left:5px;
+		  margin-top:10px;
+		  background-color:#fff;
+		  text-indent:1em;
+		  float:left;
+		}
+		.right3{
+		  width:80%;
+		  height:12px;
+		  margin-left:80px;
+		  margin-top:20px;
+		  float:left;
+		  color:#000;
+		  font-size:12px;
+		}
+		.right31{
+		  width:15%;
+		  height:auto;
+		  margin-left:80px;
+		  margin-top:6px;
+		  border-left: 4px solid #43b29f;
+		  padding:10px;
+		  background-color:#fff;
+		  line-height:24px;
+		  font-size:10px;
+		  text-indent:1em;
+		  float:left;
+		  
+		}
+		.right31 p{
+		  margin:0px;
+		  padding:0px;
+		}
+		.right311{
+		  display:inline;
+		  width:48px;
+		  height:37px;
+		  margin-top:5px;
+		  margin-right:5px;
+		  float:right;
+		  background-color:#43b29f;
+		}
+		.right32{
+		  width:15%;
+		  height:auto;
+		  margin-left:40px;
+		  margin-top:6px;
+		  border-left: 4px solid #398ac1;
+		  padding:10px;
+		  background-color:#fff;
+		  line-height:24px;
+		  font-size:10px;
+		  text-indent:1em;
+		  float:left;
+		  
+		}
+		.right32 p{
+		  margin:0px;
+		  padding:0px;
+		}
+		.right321{
+		  display:inline;
+		  width:48px;
+		  height:37px;
+		  margin-top:5px;
+		  margin-right:5px;
+		  float:right;
+		  background-color:#398ac1;
+		}
+		.right33{
+		  width:15%;
+		  height:auto;
+		  margin-left:40px;
+		  margin-top:6px;
+		  border-left: 4px solid #cf4b36;
+		  padding:10px;
+		  background-color:#fff;
+		  line-height:24px;
+		  font-size:10px;
+		  text-indent:1em;
+		  float:left;
+		  
+		}
+		.right33 p{
+		  margin:0px;
+		  padding:0px;
+		}
+		.right331{
+		  display:inline;
+		  width:48px;
+		  height:37px;
+		  margin-top:5px;
+		  margin-right:5px;
+		  float:right;
+		  background-color:#cf4b36;
+		}
+		.right34{
+		  width:15%;
+		  height:auto;
+		  margin-left:40px;
+		  margin-top:6px;
+		  border-left: 4px solid #e1cd46;
+		  padding:10px;
+		  background-color:#fff;
+		  line-height:24px;
+		  font-size:10px;
+		  text-indent:1em;
+		  float:left;
+		  
+		}
+		.right34 p{
+		  margin:0px;
+		  padding:0px;
+		}
+		.right341{
+		  display:inline;
+		  width:48px;
+		  height:37px;
+		  margin-top:5px;
+		  margin-right:5px;
+		  float:right;
+		  background-color:#e1cd46;
+		}
+		.right4{
+		  width:80%;
+		  height:340px;
+		  margin-left:80px;
+		  margin-top:20px;
+		  float:left;
+		}
+		.right41{
+		  width:60%;
+		  height:340px;
+		  margin:0;
+		  padding:0;
+		  background-color:#f4f5f7;
+		  float:left;
+		  overflow:auto;
+		}
+		.right41 h2{
+		  margin:10px;
+		  padding:0;
+		  font-size:12px;
+		  text-indent:2em;
+		  color:#cfcfcf;
+		  
+		}
+		.right411{
+		  width:100%;
+		  height:300px;
+		  background-color:#fff;
+		  float:left;
+		}
+		.right411 ul{
+		    list-style-type:none;
+		}
+		.right411 li{
+		    float:left;
+		}
+		.active{
+		   background-color:#fff;
+		   border-top:
+		}
+		.right411 a:link,a:visited{
+		    display:block;
+			width:80px;
+			height:20px;
+			padding-top:5px;
+			margin:2px;
+			background-color:#edecf1;
+			text-align:center;
+			text-decoration:none;
+			font-size:12px;
+			font-family:微软雅黑;
+		}
+		.table1{
+		    width:80%;
+			margin-top:80px;
+			margin-left:40px;
+			border:1px solid #eee;
+		}
+		.table1 td{
+		    text-align:center;
+			border:1px solid #eee;
+			font-size:12px;
+			height:30px;
+		}
+		.right42{
+		  width:36%;
+		  height:340px;
+		  margin-left:4%;
+		  background-color:#f4f5f7;
+		  float:left;
+		  text-indent:2em;
+		}
+		.right42 h2{
+		  margin:10px;
+		  padding:0;
+		  font-size:12px;
+		  text-indent:2em;
+		  color:#cfcfcf;
+		}
+		.right42 p{
+		    margin:0;
+			padding:0;
+			font-size:14px;
+			line-height:20px;
+		}
+		.box421{
+		    width:80px;
+			height:40px;
+		    border-top:1px solid #e7e7e7;
+			border-right:1px solid #e7e7e7;
+		    border-bottom:1px solid #e7e7e7;
+			text-indent:1em;
+			text-align:left;
+			margin-left:30px;
+			padding-top:10px;
+			float:left;
+		}
+		.box422{
+		    width:180px;
+			height:40px;
+		    border-top:1px solid #e7e7e7;
+		    border-bottom:1px solid #e7e7e7;
+			padding-top:10px;
+			text-indent:1em;
+			text-align:left;
+			float:left;
+		}
+		.box423{
+		    width:260px;
+			height:100px;
+		    border-bottom:1px solid #e7e7e7;
+			padding-top:20px;
+			margin-left:30px;
+			margin-bottom:10px;
+			text-indent:1em;
+			text-align:left;
+			float:left;
+		}
+		
+		.right51{
+		  width:36%;
+		  height:340px;
+		  margin-right:4%;
+		  background-color:#f4f5f7;
+		  float:left;
+		}
+		.table2{
+		     width: 100%;
+			 font-size:10px;
+			 border-spacing: 0 2px;
+		}
+		
+        .table2 thead th{
+	        height: 29px; border-top: 1px solid #a9cfec; border-bottom: 1px solid #e1e1e2; font-weight: normal; }
+        .table2 td{
+	        text-align: center; vertical-align: middle; padding: 7px 0;  border: 1px solid transparent;
+		}
+        .table2 td.highlight{
+	        border: 1px solid #f4c21d;
+	    }
+        .table2 td.holiday div{ 
+	        color: #c9161d; 
+		}
+        .table2 td:nth-child(6), .calendar td:nth-child(7){
+		    color: #c9161d; 
+	    }
+        .table2 td div{
+		    color: #323333; 
+		}
+		.table3{
+		    width:80%;
+			margin-top:20px;
+			margin-left:40px;
+			border:1px solid #eee;
+		}
+		.table3 td{
+		    text-align:center;
+			border:1px solid #eee;
+			font-size:12px;
+			height:18px;
+		}
+		.table3 .line{
+		    width:160px;
+			height:4px;
+			background-color:#dcdcdc;
+		}
+		.table3 .line1{
+			height:100%;
+			background-color:#ec6e51;
+		}
+		.table3 .line2{
+			height:100%;
+			background-color:#f19e4f;
+		}
+		.table3 .line3{
+			height:100%;
+			background-color:#7ecaef;
+		}
+		.right51 h2{
+		  margin:10px;
+		  padding:0;
+		  font-size:12px;
+		  text-indent:2em;
+		  color:#cfcfcf;
+		  
+		}
+		.right52{
+		  width:60%;
+		  height:340px;
+		  margin:0;
+		  padding:0;
+		  background-color:#f4f5f7;
+		  float:left;
+		  overflow:auto;
+		}
+		.right52 h2{
+		  margin:10px;
+		  padding:0;
+		  font-size:12px;
+		  text-indent:2em;
+		  color:#cfcfcf;
+		  
+		}
+		
+	</style>
+  </head>
+  <body>
+      <header>
+	  </header>
+	  <div class="left-col">
+		  <div class="user">
+				<img src="https://github.com/ZzYYyyY/wwtask/blob/wtask3/task9/imgleft1.gif?raw=true" alt="user logo">
+				<h4>ABC123</h4>
+			</div>
+
+			<div class="menu clearfix">
+				<div class="left">
+					<div>110</div> 
+					<div>收藏</div>
+				</div>
+				<div class="left">
+					<div>313</div>
+					<div>粉丝</div>
+				</div>
+			</div>
+
+			<nav>
+				<ul>
+					<li class="active0"><i></i>个人报表
+						<ul>
+							<li class=" "><i></i>文件一</li>
+							<li class=" "><i></i>文件二
+								<ul>
+									<li class=" "><i></i>文档1</li>
+									<li class=" "><i></i>文档1</li>
+								</ul>
+							</li>
+							<li class=" "><i></i>文件二</li>
+						</ul>
+					</li>
+
+					<li class=""><i></i>个人收藏</li>
+					<li class=" "><i></i>我的分享</li>
+					<li class=" "><i></i>图库</li>
+					<li class=" "><i></i>成长记录</li>
+					<li class=" "><i></i>账户信息</li>
+				</ul>
+			</nav>
+	  </div>
+	  <div class="right-col">
+	      <div class="right-top">
+		      <p style="text-indent:2em;font-size:10px;">C站 / 个人报表 / 文件一 / <font style="color:#7ca6ca">文档一</font></p>
+		  </div>
+		  <div class="right1">
+		      <form>
+		      <p>查询项&nbsp <select style="font-size:10px;borde:2px solid #f5f5f5;height:24px;">
+			              <option value="">&nbsp第一项</option>
+						  <option value="">&nbsp第二项</option>
+						  <option value="">&nbsp第三项</option>
+						  <option value="">&nbsp第四项</option>
+						</select>&nbsp&nbsp&nbsp&nbsp
+				买方&nbsp   <select style="font-size:10px;width:100px;borde:2px solid #f5f5f5;height:24px;">
+			              <option value="">小A</option>
+						  <option value="">小C</option>
+						  <option value="">小E</option>
+						</select>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+			    日期&nbsp  <input type="data" style="font-size:12px;borde:2px solid #f5f5f5;height:24px;width:80px;">
+						 </input>&nbsp&nbsp&nbsp&nbsp
+				总耗时&nbsp <select style="font-size:12px;borde:2px solid #f5f5f5;height:24px;">
+			              <option value="">8 天</option>
+						  <option value="">10 天</option>
+						  <option value="">12 天</option>
+						  <option value="">14 天</option>
+						</select>&nbsp&nbsp&nbsp&nbsp
+				<input type="submit" value="搜索" style="font-size:12px;width:48px;background-color:#228abf;color:#fff;margin-top"></input></p>
+			   <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp卖方&nbsp   <select style="borde:2px solid #f5f5f5;height:24px;font-size:12px;width:100px;">
+			              <option value="">小B</option>
+						  <option value="">小D</option>
+						  <option value="">小F</option>
+						</select>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+				人数&nbsp   <select style="font-size:12px;borde:2px solid #f5f5f5;height:24px;">
+			              <option value="">10 人</option>
+						  <option value="">15 人</option>
+						  <option value="">20 人</option>
+						  <option value="">25 人</option>
+						</select>&nbsp&nbsp&nbsp
+				成交项&nbsp   <select style="font-size:12px;borde:2px solid #f5f5f5;height:24px;width:100px;">
+			              <option value="">10 项</option>
+						  <option value="">12 项</option>
+						  <option value="">14 项</option>
+						  <option value="">16 项</option>
+						</select>
+			   </p>
+			  </form>
+		  </div>
+		  <div class="right2">
+		      <div class="right21">
+			  &lt;
+			  </div>
+			  <div class="right22">
+			      <font style="font-size:8px;"><b>10:00 am</b><br/></font>
+				  &nbsp 
+				  <font style="font-size:22px;color:#ec6500;text-indent:1.5em;">&#165 1200</font>
+			  </div>
+			  <div class="right23">
+			      
+			      <font style="font-size:8px;"><b>10:00 am</b><br/></font>
+				  &nbsp 
+				  <font style="font-size:22px;color:#ec6500;text-indent:1.5em;">&#165 1200</font>
+			  </div>
+			  <div class="right23">
+			      
+			      <font style="font-size:8px;"><b>10:00 am</b><br/></font>
+				  &nbsp 
+				  <font style="font-size:22px;color:#ec6500;text-indent:1.5em;">&#165 1200</font>
+			  </div>
+			  <div class="right23">
+			      
+			      <font style="font-size:8px;"><b>10:00 am</b><br/></font>
+				  &nbsp 
+				  <font style="font-size:22px;color:#ec6500;text-indent:1.5em;">&#165 1200</font>
+			  </div>
+			  <div class="right23">
+			      
+			      <font style="font-size:8px;"><b>10:00 am</b><br/></font>
+				  &nbsp 
+				  <font style="font-size:22px;color:#ec6500;text-indent:1.5em;">&#165 1200</font>
+			  </div>
+			  <div class="right23">
+			      
+			      <font style="font-size:8px;"><b>10:00 am</b><br/></font>
+				  &nbsp 
+				  <font style="font-size:22px;color:#ec6500;text-indent:1.5em;">&#165 1200</font>
+			  </div>
+			  <div class="right23">
+			  
+			      <font style="font-size:8px;"><b>10:00 am</b><br/></font>
+				  &nbsp 
+				  <font style="font-size:22px;color:#ec6500;text-indent:1.5em;">&#165 1200</font>
+			  </div>
+			  <div class="right25">
+			      &gt;
+			  </div>
+			  <div class="right24">
+			  </div>
+		  </div>
+		  <div class="right3">
+		        2016年4月统计
+		  </div>
+		  <div class="right31">
+		      <div class="right311"></div>
+		      <p>133311</p>
+			  <p>成交量</p>
+		  </div>
+		  <div class="right32">
+		      <div class="right321"></div>
+		      <p>133311</p>
+			  <p>成交量</p>
+		  </div>
+		  <div class="right33">
+		      <div class="right331"></div>
+		      <p>133311</p>
+			  <p>成交量</p>
+		  </div>
+		  <div class="right34">
+		      <div class="right341"></div>
+		      <p>133311</p>
+			  <p>成交量</p>
+		  </div>
+		  <div class="right4">
+		      <div class="right41">
+			      <h2>第一组项目</h2>
+				  <div class="right411">
+			      <ul class="">
+				      <li class="active"><a href="#tab1">项目一</a></li>
+					  <li><a href="#">项目一</a></li>
+					  <li><a href="#">项目一</a></li>
+					  <li><a href="#">项目一</a></li>
+					  <li><a href="#">项目一</a></li>
+				  </ul>
+				  <div id="tab1">
+				  <table class="table1" border="0" cellpadding="0" cellspacing="0">
+						<tbody>
+							<tr>
+								<td>购买材料一</td>
+								<td>购买材料一</td>
+								<td>购买材料一</td>
+								<td>购买材料一</td>
+							</tr>
+							<tr>
+								<td>购买材料二</td>
+								<td>购买材料二</td>
+								<td>购买材料二</td>
+								<td>购买材料二</td>
+							</tr>
+							<tr>
+						    	<td>购买材料四</td>
+								<td>购买材料四</td>
+								<td>购买材料四</td>
+								<td>购买材料四</td>
+							</tr>
+					    	<tr>
+								<td>购买材料六</td>
+								<td>购买材料六</td>
+								<td>购买材料六</td>
+								<td>购买材料六</td>
+							</tr>
+							<tr>
+								<td>购买材料十三</td>
+								<td>购买材料十三</td>
+								<td>购买材料十三</td>
+				     			<td>购买材料十三</td>
+							</tr>
+							<tr>
+								<td>购买材料二十</td>
+								<td>购买材料二十</td>
+								<td>购买材料二十</td>
+								<td>购买材料二十</td>
+							</tr>
+						</tbody>
+				  </table>
+			      </div>
+			      </div>
+		      </div>
+			  <div class="right42">
+			      <h2>第一组项目</h2>
+				  <div class="right411">
+				      <p style="margin-top:14px;color:#e7e7e7;">标题</p>
+					  <p>项目报表三</p>
+					  <div class="box421">
+					     <p style="color:#e7e7e7;">价格</p>
+						 <p>&#165 158</p>
+					  </div>
+					  <div class="box422">
+					     <p style="color:#e7e7e7;">负责人</p>
+						 <p>小A</p>
+					  </div>
+					  <div class="box423">
+					     <p style="color:#e7e7e7;">详细描述</p>
+						 <p>该项目目前负责人是……</p>
+					  </div>
+					   &nbsp&nbsp&nbsp
+					   <span style="font-size:12px;">
+					   <input type="checkbox" >
+										遵守保密协议
+					    </span>
+					&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+					<input  type="submit" value="搜索" style="background-color:#388ac1;color:#fff;"></input>
+				  </div>
+			  </div>
+		 </div>
+		 <div class="right4">
+		     <div class="right51">
+			     <h2>日历</h2>
+				 <div class="right411">
+				 <select style="font-size:10px;width:66px;borde:2px solid #f5f5f5;height:24px;">
+			     <option value="">2016年</option>
+						</select>
+						<select style="font-size:10px;width:46px;borde:2px solid #f5f5f5;height:24px;">
+			              <option value="">4月</option>&nbsp
+						</select>
+						<select style="font-size:10px;width:7em;borde:2px solid #f5f5f5;height:24px;">
+			              <option value="">标注日期</option>
+						</select>
+						<input type="submit" value="返回今天" style="font-size:10px;width:66px;borde:2px solid #000;height:24px;background-color:#fff;color:#000;"></input>
+							<table class="table2">
+								<thead>
+									<tr>
+										<th>一</th>	
+										<th>二</th>	
+										<th>三</th>	
+										<th>四</th>	
+										<th>五</th>	
+										<th>六</th>	
+										<th>日</th>	
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td class="holiday">1 <div>愚人节</div></td>
+										<td>2 <div>廿五</div></td>
+										<td>3 <div>廿六</div></td>
+									</tr>
+									<tr>
+										<td>4 <div>廿七</div></td>
+										<td class="holiday">5 <div>清明</div></td>
+										<td>6 <div>廿九</div></td>
+										<td>7 <div>三月</div></td>
+										<td>8 <div>初二</div></td>
+										<td class="highlight">9 <div>初三</div></td>
+										<td>10 <div>初四</div></td>
+									</tr>
+									<tr>
+										<td>11 <div>廿七</div></td>
+										<td class="highlight">12 <div>廿八</div></td>
+										<td>13 <div>廿九</div></td>
+										<td>14 <div>三月</div></td>
+										<td>15 <div>初二</div></td>
+										<td>16 <div>初三</div></td>
+										<td>17 <div>初四</div></td>
+									</tr>
+									<tr>
+										<td>18 <div>廿七</div></td>
+										<td class="highlight">19 <div>廿八</div></td>
+										<td>20 <div>廿九</div></td>
+										<td>21 <div>三月</div></td>
+										<td>22 <div>初二</div></td>
+										<td>23 <div>初三</div></td>
+										<td>24 <div>初四</div></td>
+									</tr>
+									<tr>
+										<td>25 <div>廿七</div></td>
+										<td>26 <div>廿八</div></td>
+										<td>27 <div>廿九</div></td>
+										<td>28 <div>三月</div></td>
+										<td>29 <div>初二</div></td>
+										<td>30 <div>初三</div></td>
+										<td>31 <div>初四</div></td>
+									</tr>
+								</tbody>
+							</table>
+				 </div>
+			 </div>
+			 <div class="right52">
+			     <h2>汽车行业品牌榜</h2>
+				 <div class="right411">
+				     <table id="table3" class="table3">
+					     <tbody>
+									<tr>
+										<td>排名</td>
+										<td>品牌</td>
+										<td width="65%" colspan="2">搜索指数</td>
+									</tr>
+								
+									<tr>
+										<td>1</td>
+										<td>大众</td>
+										<td>48912001</td>
+										<td width="50.53%">
+											<div class="line">
+												<div class="line1" style="width: 80%"></div>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>2</td>
+										<td>丰田</td>
+										<td>29307333</td>
+										<td>
+											<div class="line">
+												<div class="line1" style="width: 70%"></div>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>3</td>
+										<td>奥迪</td>
+										<td>23307333</td>
+										<td>
+											<div class="line">
+												<div class="line2" style="width: 60%"></div>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>4</td>
+										<td>本田</td>
+										<td>22307333</td>
+										<td>
+											<div class="line">
+												<div class="line3" style="width: 50%"></div>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>5</td>
+										<td>福特</td>
+										<td>21307333</td>
+										<td>
+											<div class="line">
+												<div class="line3" style="width: 50%"></div>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>6</td>
+										<td>宝马</td>
+										<td>20307333</td>
+										<td>
+											<div class="line">
+												<div class="line3" style="width: 50%"></div>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>7</td>
+										<td>现代</td>
+										<td>19307333</td>
+										<td>
+											<div class="line">
+												<div class="line3" style="width: 50%"></div>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>8</td>
+										<td>起亚</td>
+										<td>19307333</td>
+										<td>
+											<div class="line">
+												<div class="line3" style="width: 50%"></div>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>9</td>
+										<td>奔驰</td>
+										<td>18307333</td>
+										<td>
+											<div class="line">
+												<div class="line3" style="width: 50%"></div>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>10</td>
+										<td>别克</td>
+										<td>17307333</td>
+										<td>
+											<div class="line">
+												<div class="line3" style="width: 50%"></div>
+											</div>
+										</td>
+									</tr>
+						 </tbody>
+					 </table>
+				 </div>
+			 </div>
+		 </div>
+	  </div>
+  </body>
+</html>

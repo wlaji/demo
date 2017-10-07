@@ -1,0 +1,24 @@
+﻿@charset "utf-8";
+/* CSS Document */
+a { text-decoration:none;color:#333}
+
+a:hover{text-decoration:underline;color:#f40;}
+
+img { border:none;margin:0px;padding:0px;}
+
+body,button,input,select,textarea{
+	font:16px/1.5 '微软雅黑',tahoma,Srial,helvetica,sans-serif;
+
+}
+table {
+	border-collapse:collapse;
+	border-spacing:0;}
+ol,ul,li {
+	list-style:none; vertical-align:middle;
+}
+h1,h2,h3,h4,h5,h6 {
+	font-size:100%;
+}
+
+
+

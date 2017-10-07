@@ -1,0 +1,4 @@
+@charset "utf-8";
+/* CSS Document */
+	#slideshow{width:66px;height:43px;position:relative;overflow:hidden;left:20px;}
+	#preview{position:absolute;}

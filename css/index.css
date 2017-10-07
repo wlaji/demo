@@ -1,0 +1,286 @@
+@charset "utf-8";
+/* CSS Document */
+*{margin:0px;padding:0px;}
+.wrap{
+	width:894px;
+	margin:0 auto;
+	overflow:hidden;
+}
+.header{
+	height:62px;	
+}
+.line{
+	border-bottom:2px solid #938e8c;
+	padding-top:60px;
+}
+.header-left{
+	width:110px;
+	height:60px;
+	float:left;
+	background:#d45d5c;	
+	color:#fff;
+
+}
+.header-left p{
+	padding-top:46px;
+	padding-left:0px;
+}
+.header-left,.header-right{
+	font-size:12px;
+	font-family:"黑体";
+}
+.header-right{
+	float:right;
+	color:#d76c6b;
+}
+.header-right p{
+	padding-top:44px;
+	
+}
+.main-header{
+	margin-top:30px;
+	overflow:hidden;
+	margin-bottom:40px;
+	
+}
+.main-header-left{
+	float:left;
+}
+.main-header-right{
+	float:right;
+	width:220px;
+}
+.main-header-right-line{
+	border-top:2px solid #cc8091;
+	
+}
+.caption{
+	font-size:24px;
+	text-decoration:underline
+}
+.caption span{
+	font-size:30px;
+}
+.content{
+	font-size:12px;
+}
+.main-header-right h2,h3,h4,h5,.caption{
+	font-family:"微软雅黑";
+	
+}
+.main-header-right h2{
+	font-style:italic;
+	font-size:100px;
+	color:#75b86b;
+	margin-left:-20px;
+}
+.main-header-right h3{
+	font-size:55px;
+	color:#cc8091;
+	float:left;
+	margin-right:5px;
+}
+.main-header-right h4{
+	font-size:21px;
+	color:#cc8091;
+	margin-top:16px;
+	
+}
+.main-header-right h5{
+	color:#d4d3d3;
+	font-size:12px;
+}
+.main-content{
+	overflow:hidden;
+	margin-bottom:70px;
+}
+.main-content-left,.main-content-center,.main-content-right{
+	font-size:12px;
+	font-family:"微软雅黑";
+	color:#8d8d8d;
+	float:left;
+}
+.main-content-left{
+	width:228px;
+}
+.main-content-left-title{
+	font-size:16px;
+	color:#418c59;
+}
+.main-content-center{
+	width:204px;
+	margin:0 30px 0 30px;
+}
+.main-content-center-title{
+	font-size:16px;
+	color:#d2994f;
+}
+.main-content-right{
+	width:150px;
+	
+}
+.main-content-right ul li{
+	list-style-type:none;
+	margin-top:10px;
+}
+.main-content-right ul{
+	margin-top:26px;
+}
+.main-content-right-title{
+	font-size:16px;
+	color:#cc7680;
+	
+}
+.main-content-right ul li span{
+	color:#ebc1c0;
+}
+.main-footer-left{
+	width:450px;
+	float:left;
+	margin-right:20px;
+	overflow:hidden;
+}
+.main-footer-left-title{
+	font-size:42px;
+	color:#11456b;
+	
+}
+.main-footer-left-title span{
+	font-size:72px;
+	color:#f5e327;
+	font-style:italic;
+	margin-right:5px;
+	
+}
+.title-translation{
+	font-size:33px;
+	color:#11456b;
+}
+.main-footer-left-line{
+	border-top:2px solid #11456b;
+	margin:20px 0;
+	
+}
+.character{
+	float:left;
+	font-size:70px;
+	color:#f5e327;
+	margin-top:-10px;
+	margin-right:10px;
+	
+}
+
+.main-footer-left img{
+	float:right;
+	
+}
+.main-footer-left p{
+	text-indent:2em;
+}
+.main-footer-right{
+	width:420px;
+	float:right;
+}
+.main-footer-right-top{
+	height:255px;
+	background:url(../image/youxia.jpg) no-repeat;
+	overflow:hidden;
+}
+.right-title{
+	border-left:2px solid #72b16a;
+	font-size:26px;
+	color:#FFFFFF;
+	margin-left:36px;
+	margin-right:10px;
+	padding-left:10px;
+}
+.right-translation{
+	font-size:12px;
+	font-style:italic;
+	color:#72ae6b;
+}
+.main-footer-right-top-wrap{
+	margin-top:200px;
+	height:55px;
+	background-color:#727178;line-height:55px;
+}
+.main-footer-right-bottom{
+	margin-top:30px;
+	background-color:#eeedd6;
+	overflow:hidden;
+}
+.main-footer-right-bottom ul li{
+	list-style-type:none;
+	font-size:16px;
+	font-family:"宋体";
+	list-style-image:url(../image/%E5%80%92%E4%B8%89%E8%A7%92.jpg);
+	margin-top:20px;
+	
+	
+}
+.main-footer-right-bottom ul li span{
+	font-size:10px;
+	font-style:italic;
+}
+.main-footer-right-bottom ul{
+	font-size:16px;
+	padding-left:30px;
+	padding-top:10px;
+}
+.date{
+	background:#d45d5c;
+	float:left;
+	width:258px;
+	height:158px;
+	margin-top:130px;
+	
+}
+.quote{
+	width:150px;
+	margin-top:130px;
+	float:right;
+	margin-left:10px;
+	
+	
+	
+}
+.main-footer{
+	overflow:hidden;
+}
+footer{
+	margin-top:50px;
+	font-size:12px;
+	color:#e09392;
+}
+.footer-line{
+	border-top:2px solid #938e8c;
+}
+footer p{
+	float:right;
+}
+.date-left{
+	font-size:110px;
+	color:white;
+	margin-left:10px;
+	float:left;
+	border-right:2px soild #FFFFFF;
+	padding-right:10px;
+}
+.date-right{
+	font-size:21px;
+	
+	
+}
+.date-body{
+	font-size:12px;
+	
+}
+.date-content{
+	overflow:hidden;
+	border-left:2px solid white;
+	font-size:12px;
+	font-family:"黑体";
+	margin-top:30px;
+	padding-left:10px;
+	color:white
+}

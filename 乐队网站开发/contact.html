@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>模板开发</title>
+<link href="../css/layout.css" rel="stylesheet">
+</head>
+<body>
+<div id="header">
+<img src="../image/logo.gif" />
+</div>
+<div id="navigation">
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="photos.html">Photos</a></li>
+    <li><a href="live.html">Live</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</div>
+<div id="content">
+  <h1>Contact the band</h1>
+<form method="post" action="#">
+  <fieldset>
+    <p>
+     <label for="name">Name:</label>
+     <input type="text" id="name" name="name"  value="Your name" class="required" />
+    </p>
+    <p>
+     <label for="email">Email:</label>
+     <input type="text" id="email" name="email"  value="Your email address" class="email required" />
+    </p>
+    <p>
+     <label for="message">Message:</label>
+     <textarea cols="45" rows="7" id="message" name="message" placeholder="Write your message here." ></textarea>
+    </p>
+    <input type="submit" value="Send" />
+   </fieldset>
+</form>
+</div>
+
+<script src="../js/global.js"></script>
+</body>
+</html>

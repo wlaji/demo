@@ -1,0 +1,379 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<style type="text/css">
+	*{margin:0;padding:0;border:0;}
+	body{width:1380px;;box-sizing:border-box;margin:0px auto;}
+	#header{height:55px;position:relative;line-height:55px;}
+	#newworld{font:20px "黑体";margin-left:60px;}
+	#bookimages {vertical-align:middle;}
+	#headertable{float:right;font:15px "微软雅黑";color:#808080;border-spacing:30px 0px;}
+	#homepage{color:#E70A0A;border-bottom:3px solid #e70a0a;padding:15px 0px 17px 0px;}
+	#signuplogo{vertical-align:middle;}
+	#signup{color:#e70a0a;vertical-align:middle;}
+	#footer{width：1280px;height:423px;border:1px solid black;background:#343434;color:white;}
+	#contactUs{height:360px;display:flex;flex-direction:column;justify-content:center;align-items:center;background:#484848;}
+	#contactUs h3{font:22px "黑体";margin-bottom:10px;}
+	#contctUs p{font:10px "宋体";}
+	#customsEmailBox{font:15px "微软雅黑";width:330px;height:40px;color:#B7B7B7;padding:0px 5px;margin:20px;vertical-align:middle;}
+	#customsEmailSubmit{width:80px;height:41px;font:15px "黑体";vertical-align:middle;background:#8D8D8D;color:white;margin-left:-28px;border:0px}
+	#footertable td{width:20px;height:20px;}
+	#footertable{border-spacing:20px 0px;}
+	#authority{font:10px "微软雅黑";line-height:60px;}
+	#authority span a:link{text-decoration:none;color:white;}
+	#authority span a:visited{text-decoration:none;color:white;}
+	#authority span a:hover{text-decoration:none;color:red;}
+	#authority span a:active{text-decoration:none;color:blue;}
+	#mainbody{position:relative}
+	#part1{box-sizing:border-box;width:1280px;height:854px;display:flex;color:white;flex-direction:column;align-items:flex-start;justify-content:center;padding-left:140px;top:0px;position:absolute;}
+	#part1 h1{
+		font: 50px "微软雅黑";
+		margin-bottom: 20px;
+	}
+	#part1 p{
+		font: 20px "微软雅黑";
+		width: 300px;
+		margin-bottom: 60px;
+	}
+	#part1button{
+		border:0px ;
+		color: white;
+		width: 327px;
+		height: 60px;
+		background-color:#C73F3F;
+		font: 28px "微软雅黑";
+		letter-spacing: 20px;
+	}
+	#part2{font:14px "黑体";color:#AEAEAE;display:flex;align-items:center}
+	#part2 p{height:50px;margin-top:20px;border-right:2px solid #aeaeae;padding:0 80px;}
+	.part2left{box-sizeing:border-box;text-align:center;}
+	#part3{background:white;box-sizing:border:border-box;height:365px;display:flex;flex-direction:column;align-items:center;justify-content:center;}
+	#part3 h1{color:#A2A2A2;font:50px "黑体";margin-top:30px;}
+	#part4{position:relative;}
+	#divinpart4{position:absolute;top:0px;width:1280px;height:328px;display:flex;flex-direction:column;justify-content:center;align-items:center;color:white;}
+	#divinpart4 h1{font-size:21px "微软雅黑";}
+	.line{width:30px;border:1px solid;margin:20px 0px;}
+	#divinpart4 h2{font-size:10px;margin-bottom:40px;}
+	.select{display:inline-block;width:210px;height:35px;vertical-align:middle;margin:0 20px;box-sizing:border-box;}
+	#part4form select{width:235px;height:35px;padding:5px;color:#A7A7A7;font-family:"微软雅黑";background:#FFFFFF;box-sizing:border-box; }
+	#part4 button{width:235px;height:35px;background:#C8161B;color:white;font:14px "微软雅黑";letter-spacing:25px;padding-left:25px;vertical-align:middle;margin:0 20px;}
+	.option option{height:35px;border:2px solid rgba(191,78,72,1.00);background-color:white; }
+	#part5{height:400px;width:1280px;position:relative;display:flex;justify-content:center;align-items:center;}
+	.part5Content{margin:40px;text-align:center;}
+	.part5Content h5{font-size:14px;color:#3B3232;}
+	.part5Content p{
+		font-size: 12px;
+		color: darkgray;
+	}
+	#part6{position:relative;height:1086px;}
+	#topleft{position:absolute;width:850px;height:400px;top:0px;display:flex;flex-direction: column;justify-content: center;align-items: center;color: white;font-family: "微软雅黑";}
+	#topleft div{
+		width:0px;height:0px;border-top:15px solid transparent;border-bottom:15px solid transparent;border-right: 30px solid white;position: absolute;
+		right: -9px;
+		top: 265px;
+	}
+	#topleft h2{font-size:50px;}
+	#topleft h1{font-size:150px;}
+	#topleft h3{font-size:20px;width:150px;line-height:40px;}
+	#topright{width:425px;height:448px;position:absolute;right:0px;top:0px;font-family:"微软雅黑";display:flex;flex-direction:column;justify-content:center;align-items:center;}
+	#topright>p{
+		font: 8px "宋体";
+		color: rgba(176,176,176,1.00);
+		width: 285px;
+		line-height: 30px;
+		margin-bottom: 50px;
+	}
+	#toprightbutton{
+		width: 105px;
+		height: 30px;
+		border: 1px solid rgba(232,80,79,1.00);
+		background: transparent;
+		font-family: "微软雅黑";
+		color: rgba(232,80,79,1.00);
+	}
+	#bottomleft{position:absolute;width:425px;height:500px;top:482px;display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		font: 22px "微软雅黑";}
+		#bottomMiddle{position:absolute;width:425px;height:500px;top:482px;display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		font: 22px "微软雅黑";}
+		#bottomleft{
+		
+		left: 1px;
+		background: rgba(232,80,79,1.00);
+		color: white;
+	}
+	#bottomleft>button{
+		width: 167px;
+		height: 40px;
+		border: 1px solid white;
+		background: transparent;
+		font: 18px "微软雅黑";
+		color: white;
+	}
+	#bottomMiddle{
+		left: 426px;		
+	}
+	#bottomMiddle>button{
+		width: 167px;
+		height: 40px;
+		border: 1px solid rgba(232,80,79,1.00);
+		background: transparent;
+		font: 18px "微软雅黑";
+		color: rgba(232,80,79,1.00);
+	}
+	#picture{position:absolute;top:482px;right:0px;}
+	#bottomright{position:absolute;top:482px;left:855px;width:425px;height:500px;}
+	#trangle2{width:0px;height:0px;border-top:15px solid transparent;;border-bottom:15px solid transparent;border-left:30px solid white; position:absolute;top:265px; }
+	#part7{position:relative;width:100%;height:600px;display:flex;flex-direction:column;align-items:center;}
+	#part7head{margin-top:100px;font:20px "微软雅黑";}
+	#part7content{
+		color:  rgba(159,159,159,1.00);
+		font: 10px "微软雅黑";
+	}
+	
+	#leftform{
+		position: absolute;
+		top: 250px;
+		left: 135px;
+		margin:20px 0px;
+	}
+	#leftform>h5{
+		font: 14px "黑体";
+		margin: 10px 0;
+	
+	}
+	#leftform>p{
+		font: 5px "宋体";
+		color: rgba(159,159,159,1.00);
+		margin-bottom: 30px;
+	}
+
+	#part7form1{
+		width: 640px;
+		position: absolute;
+		top: 250px;
+		left: 500px;
+	}
+
+	.textpart7form{
+		display: inline-block;
+		box-sizing: border-box;
+		width: 300px;
+		height: 40px;
+		background: rgba(230,230,230,1.00);
+		font: 13px "宋体";
+		line-height: 40px;
+		padding: 0 10px;
+		margin: 10px 5px;
+		color:  rgba(159,159,159,1.00);
+	}
+	.textboxInPart7{
+		background-color: transparent;
+		width: 200px;
+	}
+	.textFormInPart71{
+		display: inline-block;
+		box-sizing: border-box;
+		width: 618px;
+		height: 120px;
+		background: rgba(230,230,230,1.00);
+		font: 13px "宋体";
+		line-height: 40px;
+		padding: 0 10px;
+		margin: 10px 5px;
+		color:  rgba(159,159,159,1.00);
+		position: relative;
+	}
+	
+    .textpart7form71{
+		display: inline-block;
+		box-sizing: border-box;
+		width: 618px;
+		height: 120px;
+		background: rgba(230,230,230,1.00);
+		font: 13px "宋体";
+		line-height: 40px;
+		padding: 0 10px;
+		margin: 10px 5px;
+		color:  rgba(159,159,159,1.00);
+		position: relative;
+	}
+	#part7button{
+		width: 618px;
+		height: 40px;
+		margin-left: 5px;
+		color: black;
+		font-family: "微软雅黑";
+	}
+</style>
+</head>
+
+<body>
+<div id="header">
+    <span id="newworld"><img id="bookimages" src="../image/timg (1).jpg" width="40" height="40" alt=""/>新世界</span>
+    <table id="headertable">
+  <tbody>
+    <tr>
+      <td id="homepage" width="64" align="center">首页</td>
+      <td  width="64" align="center">最新活动</td>
+      <td  width="64" align="center">项目介绍</td>
+      <td  width="64" align="center">爱心社区</td>
+      <td  width="64" align="center">关于我们</td>
+      <td id="signup" width="64" align="center"><img id="signuplogo" src="../image/u=2800597308,2191560680&fm=26&gp=0.jpg" width="30" height="30" alt=""/>登录</td>
+    </tr>
+  </tbody>
+</table>      
+</div>
+<div id="mainbody">
+  <img  src="../image/desert.jpg" width=100% height="854"   alt=""/> 
+  <div id="part1">
+    <h1>Time of new life</h1>
+    <p>新时代，年轻的人们让我们一起体验新生活，享受新生活</p>
+   
+	<input type="button" id="part1button" value="开始体验">
+  </div>
+  <div id="part2">
+    <div class="part2left"><img src="../image/timg (4).jpg" width="80"     height="80" alt=""/><p>打造全新世界观，让你更爱你的生活</p></div>
+    <div class="part2left"><img src="../image/timg (6).jpg" width="80"     height="80" alt=""/><p>丰富多彩的公益活动，发挥你的主人公意识</p></div>
+    <div class="part2left"><img src="../image/timg (7).jpg" width="80"     height="80" alt=""/><p>时尚的新理念，超体验未知的生活</p></div>
+    <div class="part2left"><img src="../image/timg (5).jpg" width="80" height="80" alt=""/><p>完善的培养机制，培养你的全新世界观</p></div>
+  </div>
+  <div id="part3"><img src="../image/timg (1).jpg" width="50" height="50"alt=""/>
+  <h1>关于新世界，你不知道的还有什么</h1>
+  </div>
+  <div id="part4"><img src="../image/surf.jpg" width=100% height="400" alt=""/>
+  <div id="divinpart4">
+  	<h1>查找新世界城市活动信息</h1>
+    <div class="line" style="border-clolor:white;"></div>
+    <h2>每个城市有不同的活动信息，请自主查询您所需要了解的城市</h2>
+    <form id="part4form">
+    	<div class="select">
+    	<select class="option">
+       		<option>中国</option>
+            <option>美国</option>
+        </select>
+        </div>
+        <div class="select">
+    	<select class="option">
+       		<option disabled selected>省份</option>
+            <option>北京</option>
+            <option>天津</option>
+            <option>陕西</option>
+            <option>四川</option>
+            <option>上海</option>
+        </select>
+        </div>
+          <div class="select">
+        <select class="option">
+       		<option disabled selected>城市</option>
+            <option>北京</option>
+            <option>上海</option>
+            <option>成都</option>
+            <option>西安</option>
+            <option>广州</option>
+        </select>
+        </div>
+      <button id="part4button" type="button">搜索</button>
+    </form>
+    </div>
+ </div>
+  <div id="part5">
+	<div class="part5Content" id="part5Content1"><img src="../image/58f580d07af14.jpg" width="200" height="250" alt=""/>
+    <h5>北京活动</h5><p>新社区大联盟</p></div>
+	<div class="part5Content" id="part5Content2"><img src="../image/58fac6287be4f.jpg" width="200" height="250" alt=""/>
+    <h5>上海活动</h5><p>夜上海新景区探索</p></div>
+	<div class="part5Content" id="part5Content3"><img src="../image/587f1bd6709f8.jpg" width="200" height="250" alt=""/>
+    <h5>深圳活动</h5><p>全新海岸线观点站</p></div>
+	<div class="part5Content" id="part5Content4"><img src="../image/u=3062594653,505425245&fm=11&gp=0.jpg" width="200" height="250" alt=""/>
+    <h5>香港活动</h5><p>奢侈消费大派送</p></div>
+  </div>
+  <div id="part6">
+  	<img src="../image/night.jpg"  width=856px; alt=""/>
+    <div id="topleft">
+      <div id="trangle1"></div>
+      <h2>新世界</h2>
+      <h1>TIME</h1>
+      <h3>@新世界-北京 2016.04.01</h3>
+    </div>
+    <div id="topright">
+    	<h4>新世界/<span style="color:#F00430">01</span></h4>
+      <p>黑崎一护（ Kurosaki Ichigo）是日本动漫《死神》中的男主角，是灭却师与死神结合生下的后代，体内同时拥有死神、灭却师以及虚的多种力量。在家人遭到虚的袭击时，为了救下家人，从死神朽木露琪亚那里得到了死神之力，从而开启了死神代理的工作。后来分别在尸魂界篇和虚圈篇拯救同伴于险境，并打败了想要破坏尸魂界安定的蓝染惣右介，被瀞灵廷授予“尸魂界的英雄”的称呼。打败蓝染后，一护失去了死神之力，后在完现术篇中从朽木露琪亚那里再次获得。</p>
+        <input type="button" id="toprightbutton" value="更多详情">
+    </div>
+    <div id="bottomleft">
+		<p>新时代</p>
+		<p>关于爱生活的我们</p>
+		<div class="line" style="border-color: white;"></div>
+		<button>查看更多</button>
+	</div>
+	<div id="bottomMiddle">
+		<p>新时代</p>
+		<p>关于爱生活的我们</p>
+		<div class="line" style="border-color: darkgray;"></div>
+		<button>查看更多</button>
+	</div>
+  <img id="picture" src="../image/511109f185998.jpg" width="525" height="500" alt=""/>
+  	<div id="bottomright">
+    	<div id="trangle2"></div>
+    </div>
+</div>
+  <div id="part7">
+  	<p id="part7head">成为我们的志愿者</p>
+    <div class="line" style="border-color:#E71111;"></div>
+    <p id="part7content">新世界的大家庭需要每一个爱生活的人加入，如果你够年轻，有梦想，有激情</p>
+    <p id="part7content">那就不要犹豫，快来加入我们，成为改变所有人生活的人</p>
+    <div id="part7form">
+    	<div id="leftform">
+        	<h5>新世界志愿者协议</h5>
+			<p>加入新世界志愿的人必须。。。。。</p>
+			<h5>新世界志愿者权利</h5>
+			<p>加入新世界志愿的人享有。。。。。</p>
+			<h5>更多条款</h5>
+        </div>
+        <form id="part7form1">
+        	<span class="textpart7form">姓名:<input type="text" class="textboxInPart7" placeholder="请输入您的姓名"></span>
+		  <span class="textpart7form">年龄:<input type="text" class="textboxInPart7" placeholder="请输入您年龄"></span>        
+    		<span class="textpart7form">联系方式：<input type="text" class="textboxInPart7" placeholder="请输入您的联系方式"></span>
+        	<span class="textpart7form">联系地址:<input type="text" class="textboxInPart7" placeholder="请输入您的暂住地址"></span>
+        	<span class="textpart7form71">您的留言：<input type="text" class="textboxInPart7" placeholder="请输入您的留言"></span>
+            <button id="part7button" >提交申请</button>
+        </form>
+    
+    </div>
+  </div>
+</div>
+<div id="footer">
+  <div id="contactUs">
+			<h3>联系我们</h3>
+			<p>为了更好的获取我们新产品的资讯，您可以留下您的电子邮箱快速订阅我们的资讯</p>
+			<p>也可以通过以下方式关注我们的动态</p>
+			<form id="customsEmail" action="save.php" method="post">
+				<input id="customsEmailBox" type="text" name="emailAddress" placeholder="someone@email.com">
+				<input id="customsEmailSubmit" type="submit" name="emailAddress" value="提 交">
+			</form>
+			<table id="footertable">
+  				<tbody>
+    				<tr>
+      				<td><img src="../image/timg (10).jpg" width=100% height=100% alt=""/></td>
+      				<td><img src="../image/timg (11).jpg" width=100% height=100% alt=""/></td>
+      				<td><img src="../image/timg (12).jpg" width=100% height=100% alt=""/></td>
+     				<td><img src="../image/timg (13).jpg" width=100% height=100% alt=""/></td>
+    				</tr>
+  			</tbody>
+		</table>
+  </div>
+  <div id="authority">
+			<span style="float: left;margin-left: 90px;">@2016新世界</span>
+			<span style="float: right;margin-right: 40px"><a href="#header">Back to top</a></span>
+  </div>
+
+</div>
+</body>
+</html>

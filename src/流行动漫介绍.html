@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>流行动漫介绍</title>
+    <link href="../bootstrap/bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
+	<style>
+		body{padding-top:50px;margin-bottom:50px;}
+		.carousel{height:500px;background-color:#000;margin-bottom:50px;}
+		.carousel .item{height:500px;background-color:#000}
+		.carousel img{width:100%;min-height:500px;}
+		@media (max-width:768px){
+			.carousel{height:300px;background-color:#000;}
+			.carousel .item{height:300px;background-color:#000}
+			.carousel img{width:100%;min-height:300px;}
+		}
+		.carousel-caption p{line-height:1.8;margin-bottom:10px;font-size:14px;}
+		.jianjie {text-align:center;}
+		.divider{margin:40px 0px}
+		.summary{margin-bottom:50px;}
+		.feature{padding:30px 0px;}
+		.feature-head{font-size:50px;color:blue;margin-top:100px;}
+		.text-muted{font-size:25px;margin-top:100px;}
+		.lead{font-size:20px;text-align:left}
+		footer p{text-align:left;}
+	</style>
+    
+  </head>
+  
+  <body>
+  	<nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
+    	<div class="container">
+        	<div class="navbar-header">
+            	<button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+                <span class="sr-only">Toggle navgiton</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">流行动漫</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+            	<ul class="nav navbar-nav">
+                	<li><a href="#">火影忍者</a></li>
+                    <li><a href="#">死神</a></li>
+                    <li><a href="#">七龙珠系列</a></li>
+                    <li class="dropdown" ><a href="#" class="dropdown-toggle" data-toggle="dropdown">动漫简介<span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                    	<li><a href="#longZhu">七龙珠</a></li>
+                        <li><a href="#siShen">死神</a></li>
+                        <li><a href="#huoYing">火影忍者</a></li>
+                  
+                    </ul>
+                    
+                    </li>
+                    <li><a href="#" data-toggle="modal" data-target="#myModal">关于</a></li>
+                
+                </ul>
+                       <form class="navbar-form navbar-right" role="search">
+  <div class="form-group">
+    <input type="text" class="form-control" placeholder="Search">
+  </div>
+  <button type="submit" class="btn btn-default">搜索</button>
+</form>
+            </div>
+     
+        
+        </div>
+    </nav>
+<div class="carousel slide" id="carousel-example-generic" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+  </ol>
+
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <img src="../image/longzhu.jpg" alt="龙珠" height="768" />
+      <div class="carousel-caption">
+      	<h1>龙珠</h1>
+        <p>该作品是一部讲述，将散落在世界各地的七颗珠子全部集齐后，便可以实现任何一个愿望的秘宝-龙珠，和以主人公孙悟空为中心所展开的关于冒险，努力，热血，友情于一体的长篇漫画。</p>
+        <p><a class="btn btn-primary" href="">点击观看</a></p>
+      </div>
+    </div>
+    <div class="item">
+      <img src="../image/sishen.jpg" alt="死神" />
+      <div class="carousel-caption">
+      		<h1>死神</h1>
+        <p>《BLEACH》（原意“漂白”，片假名：ブリーチ）是久保带人创作，2001年开始连载于集英社旗下《周刊少年JUMP》上的漫画。亦改编有同名动画及轻小说。</p>
+        <p><a class="btn btn-primary" href="">点击观看</a></p>
+       
+      </div>
+    </div>
+    <div class="item">
+      <img src="../image/huoying.jpg" alt="火影" />
+      <div class="carousel-caption">
+      		<h1>火影</h1>
+        <p>这是一个忍者的世界。从小身上封印着邪恶的九尾妖狐， 鸣人受尽了村人的冷落，只是拼命用各种恶作剧试图吸引大家的注意力，鸣人的目标是成为第六代火影!鸣人的同伴，是由老师确定的同班同学，随着共同的战斗，终于成了互相认可、信赖的好伙伴。</p>
+        <p><a class="btn btn-primary" href="">点击观看</a></p>
+       
+      </div>
+    </div>
+   </div> 
+   
+
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">上一页</span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">下一页</span>
+  </a>
+</div>
+<div class="container" id="top">
+	<div class="row">
+    	<div class="col-md-12 summary">
+        	<h1>主角简介</h1>
+        </div>
+    </div>
+	<div class="row jianjie">
+    	<div class="col-md-4">
+        	<img src="../image/sunwukong.jpg" width="300px" height="300px" alt="孙悟空"  class="img-circle" />
+            <h2>孙悟空</h2>
+            <p>孙悟空，本名卡卡罗特，日本漫画及改编动画《龙珠》系列的主角，是来自贝吉塔行星的赛亚人。他在小时候以“下级战士”的身份被送到地球。被武道家孙悟饭收养并取名为“孙悟空”。小时候失控变成大猩猩踩死悟饭后独自生活在深山。一日结识少女布玛，从而踏上收集龙珠的大冒险。旅程中，悟空遇到了不少来自地球或地球外的朋友及敌人，于是为保卫地球，更为追求强大而刻苦修行，不断与强敌战斗， 成为拯救地球乃至全宇宙的英雄。</p>
+            <p><a class="btn btn-primary" href="">点击观看</a></p>		
+        </div>
+        <div class="col-md-4">
+        	<img src="../image/heiqiyihu.jpg" width="300px" height="300px" alt="黑崎一护" class="img-circle"  />
+        	<h2>黑骑一护</h2>
+        <p>黑崎一护（ Kurosaki Ichigo）是日本动漫《死神》中的男主角，是灭却师与死神结合生下的后代，体内同时拥有死神、灭却师以及虚的多种力量。在家人遭到虚的袭击时，为了救下家人，从死神朽木露琪亚那里得到了死神之力，从而开启了死神代理的工作。后来分别在尸魂界篇和虚圈篇拯救同伴于险境，并打败了想要破坏尸魂界安定的蓝染惣右介，被瀞灵廷授予“尸魂界的英雄”的称呼。打败蓝染后，一护失去了死神之力，后在完现术篇中从朽木露琪亚那里再次获得。</p>
+        <p><a class="btn btn-primary" href="">点击观看</a></p>
+        </div>
+        <div class="col-md-4">
+        	<img src="../image/mingren.jpg" width="300px" height="300px"  alt="鸣人" class="img-circle" />
+        	<h2>鸣人</h2>
+        <p>漩涡鸣人，日本动漫《火影忍者》系列的主角。火之国木叶隐村的忍者，四代目火影波风水门和漩涡玖辛奈之子，六道仙人次子阿修罗转世。刚出生时父母为保护村子而牺牲，并将强大的尾兽“九尾”封印于鸣人体内。成为孤儿的鸣人在孤独中长大，但在唯一认同他的老师海野伊鲁卡以及三代目火影鼓励下逐渐决心要成为火影，让所有人都认同他的存在。成为忍者后，同旗木卡卡西、宇智波佐助和春野樱组成第七班进行各种任务。</p>
+        <p><a class="btn btn-primary" href="">点击观看</a></p>
+        </div>
+	
+    </div>
+    <hr class="divider">
+  <ul class="nav nav-tabs" role="tablist" id="tab-list">
+    <li role="presentation" class="active"><a href="#longZhu" aria-controls="longZhu" role="tab" data-toggle="tab">DRAGON BALL</a></li>
+    <li role="presentation"><a href="#siShen" aria-controls="siShen" role="tab" data-toggle="tab">BLEACH</a></li>
+    <li role="presentation"><a href="#huoYing" aria-controls="huoYing" role="tab" data-toggle="tab">NARUTO -ナルト-</a></li>
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="longZhu">
+    	<div class="row feature">
+    	<div class="col-md-5">
+        	<h2 class="feature-head">七龙珠<span class="text-muted">&lt;DRAGON BALL&gt;</span></h2>
+            <p class="lead">该作品是一部讲述，将散落在世界各地的七颗珠子全部集齐后，便可以实现任何一个愿望的秘宝-龙珠，和以主人公孙悟空为中心所展开的关于冒险，努力，热血，友情于一体的长篇漫画。</p>
+        </div>
+        <div class="col-md-7">
+        	<img src="../image/longzhu.jpg"  class="img-responsive" />
+        </div>
+        </div>
+    </div>
+    
+    <div role="tabpanel" class="tab-pane" id="siShen">
+    	<div class="row feature">
+        <div class="col-md-7">
+        	<img src="../image/sishen.jpg" class="img-responsive" />
+        </div>
+        <div class="col-md-5">
+        	<h2 class="feature-head">死神<span class="text-muted">&lt;BLEACH&gt;</span></h2>
+            <p class="lead">《BLEACH》（原意“漂白”，片假名：ブリーチ）是久保带人创作，2001年开始连载于集英社旗下《周刊少年JUMP》上的漫画。亦改编有同名动画及轻小说。</p>
+        </div>
+        </div>
+    </div>
+    <div role="tabpanel" class="tab-pane" id="huoYing">
+    	<div class="row feature">
+    	<div class="col-md-5">
+        	<h2 class="feature-head">火影忍者<span class="text-muted">&lt;NARUTO -ナルト-&gt;</span></h2>
+            <p class="lead">这是一个忍者的世界。从小身上封印着邪恶的九尾妖狐， 鸣人受尽了村人的冷落，只是拼命用各种恶作剧试图吸引大家的注意力，鸣人的目标是成为第六代火影!鸣人的同伴，是由老师确定的同班同学，随着共同的战斗，终于成了互相认可、信赖的好伙伴。</p>
+        </div>
+        <div class="col-md-7">
+        	<img src="../image/zuozhu.jpg"   class="img-responsive" />
+        </div>
+    </div>
+  </div>
+
+</div>
+<hr class="divider" />
+<footer>
+	<p class="pull-right"><a href="#top">返回顶部</a></p>
+    <p>@ xiaoyuren</p>
+</footer>
+</div>
+    <div id="myModal" class="modal fade">
+       <div class="modal-dialog">
+       		<div class="modal-content">
+            	<div class="modal-header">
+                	<button class="close" data-dismiss="modal"><span>&times;</span><span class="sr-only">关闭弹窗</span></button>
+                    <h4 class="modal-title" id="myModalLabel">关于</h4>
+                </div>
+                <div class="modal-body">
+                	动漫网
+                </div>
+                <div class="modal-footer">
+                	<button class="btn btn-default" data-dismiss="modal">关闭</button>
+                    <button class="btn btn-primary" data-dismiss="modal">保存</button>
+                </div>
+            </div>
+       </div>
+    </div> 
+ 	
+   	
+    
+<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+<script src="../bootstrap/bootstrap-3.3.7-dist/js/jquery.min.js"></script>
+<script src="../bootstrap/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+<script> 
+$(document).ready(function(){
+		$("#navbar .dropdown-menu a").click(function(){
+				var href=$(this).attr("href");
+				$("#tab-list a[href='"+href+"']").tab("show");
+			
+			});
+	});
+</script>
+  </body>
+</html>

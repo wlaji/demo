@@ -1,0 +1,54 @@
+@charset "utf-8";
+/* CSS Document */
+.navbar li{position:relative;list-style-type:none;display:inline;padding:0.5em 1em;margin:0.2em}
+.navbar li a{font-size:14px;color:white;text-decoration:none;}
+.navbar li:after{
+	content:"";
+	position:absolute;
+	left:0;
+	right:0;
+	top:0;
+	bottom:0;
+	z-index:-1;
+	background:#2175bc;
+	transform:skew(-25deg,0);
+}
+.navbar li:hover:after{
+	background:#2586D7;
+}
+#list{margin-top:50px;}
+#list li{position:relative;list-style-type:none;display:inline;padding:0.5em 2em;margin:-10px;}
+#list li a{font-size:14px;color:white;text-decoration:none;}
+#list li:after{
+	content:"";
+	position:absolute;
+	left:0;
+	right:0;
+	top:0;
+	bottom:0;
+	z-index:-1;
+	background:#2175bc;
+	transform:perspective(0.5em) rotatex(3deg);
+	transform-origin:bottom;
+}
+#list li:hover:after{
+	background:#3b9be5;
+}
+.listShow{z-index:2;}
+
+.nav{margin-top:50px;overflow:hidden;}
+.nav li{position:relative;list-style-type:none;display:inline;padding:0.5em 2em;}
+.nav li a{font-size:14px;color:white;text-decoration:none;}
+.nav li:after{
+	content:"";
+	position:absolute;
+	left:0;
+	right:0;
+	top:0;
+	bottom:0;
+	z-index:-1;
+	background:url(../image/511109f185998.jpg) no-repeat center center fixed;
+	background-size:cover;
+	filter:blur(10px);
+	margin:-10px;
+}
